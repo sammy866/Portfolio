@@ -1,0 +1,8 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+
+.container-fluid {
+    --bs-gutter-x: 0rem;
+}
