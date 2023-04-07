@@ -478,3 +478,48 @@ img {
 .skills_open .skills_arrow {
     transform: rotate(-180deg);
 }
+
+/* EDUCATION */
+.education_tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
+
+.education_button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.education_button:hover {
+    color: var(--first-color);
+}
+
+.education_icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.education_subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.education_calendar {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.education [data-content] {
+    display: none;
+}
+
+.education_active[data-content] {
+    display: block;
+}
+
+.education_button.education_active {
+    color: var(--first-color);
+}
