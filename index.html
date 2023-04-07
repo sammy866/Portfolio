@@ -4,87 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <!--UNICON-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Samuel's Portfolio</title>
   </head>
   <body>
-    <!--Navbar Start-->
-    <nav class="navbar navbar-light bg-light shadow-sm bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="img/logo.jpg" alt="" style="width: 100px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active bg-success"
-                aria-current="page"
-                href="index.html"
-                >Home</a
+    <!--HEADER-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Samuel</a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link"
+                ><i class="uil uil-estate nav_icon"></i>Home</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/education.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/experience.html"
-                >Work Experience</a
+            <li class="nav_item">
+              <a href="#about" class="nav_link"
+                ><i class="uil uil-user nav_icon"></i>About Me</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/contact.html">Contact Me</a>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link"
+                ><i class="uil uil-star nav_icon"></i>Skills</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="#education" class="nav_link"
+                ><i class="uil uil-book-alt nav_icon"></i>Education</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="#experience" class="nav_link"
+                ><i class="uil uil-constructor nav_icon"></i>Work Experience</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link"
+                ><i class="uil uil-message nav_icon"></i>Contact Me</a
+              >
             </li>
           </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
         </div>
-      </div>
-    </nav>
-    <!--Navbar End-->
 
-    <!--Home Section Start-->
-    <section class="home">
-      <div class="conatiner-lg">
-        <div class="row min-vh-100 align-items-center align-content-center">
-          <div class="col-md-6">
-            <div class="home-img text-center">
-              <img
-                src="img/profile-picture.png"
-                class="rounded-circle mw-100"
-                alt="profile img"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 order-md-first">
-            <div class="home-text">
-              <p class="text-muted mb-1">Hello I'm a</p>
-              <h1 class="text-primary text-uppercase fs-1 fw-bold">
-                Software Developer
-              </h1>
-              <h2 class="fs-4">Samuel Samo</h2>
-              <p class="mt-4 text-muted">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
-              </p>
-            </div>
+        <div class="nav_btns">
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
           </div>
         </div>
-      </div>
-    </section>
-    <!--Home Section End-->
-    <script src="js/bootstrap.bundle.min.js"></script>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main"></main>
+    <!--MAIN JS-->
+    <script src="js/main.js"></script>
   </body>
 </html>
