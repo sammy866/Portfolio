@@ -70,3 +70,18 @@ tabs.forEach(tab => {
         tab.classList.add('education_active')
     })
 })
+
+/* CONTACT US FORM TO GOOGLE SHEETS */
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwbrD5eHpcUNrMx3Xjr7hHdXAeuhvVAd7o2736HdVbtRa8dImoNOq2svqJqX8seG3gKFg/exec'
+const form = document.forms['contact-me']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            form.reset()
+            alert('Thank you for contact me! I will reply as soon as possible')
+        })
+        .catch(error => console.error('Error!', error.message))
+})
