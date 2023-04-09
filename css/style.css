@@ -470,6 +470,66 @@ img {
     color: var(--first-color);
 }
 
+/* PORTFOLIO */
+.portfolio_container {
+    overflow: initial;
+}
+
+.portfolio_content {
+    padding: 0 1.5rem;
+}
+
+.portfolio_img {
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description {
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button_icon {
+    transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-portfolio-icon {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev {
+    left: -.5rem;
+}
+
+.swiper-button-next {
+    right: -.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+    outline: none;
+}
+
 /* CONTACT ME */
 
 .contact_information {
@@ -574,4 +634,46 @@ img {
 .footer_link,
 .footer_social {
     color: #fff;
+}
+
+/* SHOW MENU */
+.show-menu {
+    bottom: 100;
+}
+
+/* ACTIVE LINK */
+.active-link {
+    color: var(--first-color);
+}
+
+/* CHANGE BACKGROUND HEADER */
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .35);
+}
+
+/* SCROLL TO THE TOP */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollup:hover {
+    background-color: var(--first-color-alt);
+}
+
+.scrollup_icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* SHOW SCROLL */
+.show-scroll {
+    bottom: 2rem;
 }
